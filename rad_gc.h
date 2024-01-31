@@ -6,7 +6,7 @@
 /*   By: asnaji <asnaji@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/01 17:29:03 by asnaji            #+#    #+#             */
-/*   Updated: 2024/01/01 18:04:14 by asnaji           ###   ########.fr       */
+/*   Updated: 2024/01/31 19:49:52 by asnaji           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ typedef struct s_gc
 	struct s_gc	*next;
 }				t_gc;
 
-void	*rad_malloc(size_t size, t_gc **gc);
-void	addmallocedptr(void *ptr, t_gc **gc);
-void	rad_free(t_gc *gc);
+void	*rad_malloc(size_t size, int flag);
 
 #endif
